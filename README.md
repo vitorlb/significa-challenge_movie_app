@@ -13,17 +13,17 @@ My approach to build de frontend is based on styling by classes on the last rele
 
 The main page has one filterable list after the header, and a non filterable list listing the movies marked as 'favourites'. When the search value is setted to blank the list renders the weekly trending movies. The weekly trending movies is also the initial query for the filterable list.
 
-The list displays a thumbnail with the movie poster, the title and rating (based on the average of the reviews provided by the API: <5 = *, >5 = ** >7.5 = ***), and three buttons. The first button add the movie to the personal favourites, persisting the data in a firebase realtime db. The second would open a modal with video preview of the trailer, __this feature was not implemented due to lack of time__ , allthough part of the process is built, clicking in the button is stored in state the path for youtube video. Activating and rendering the trailer modal is what's missing. The third button redirects the user to the selected movie details page.
+The list displays a thumbnail with the movie poster, the title and rating (based on the average of the reviews provided by the API: <5 = *, >5 = ** >7.5 = ***), and three buttons. The first button add the movie to the personal favourites, persisting the data in a firebase realtime db. The second would open a modal with video preview of the trailer, _this feature was not implemented due to lack of time_ , allthough part of the process is built, clicking in the button is stored in state the path for youtube video. Activating and rendering the trailer modal is what's missing. The third button redirects the user to the selected movie details page.
 
 The search input searches for all the keywords (title, actors, director, etc).
 
 The list has two display options 'carousel' and 'list'. The carousel is made with flex display and scroll-snap.
 
-The main page has a static setion with a line from the lord of ther rings. That section was supposed to be dynamic, but such feature __was not developed due to time__.
+The main page has a static setion with a line from the lord of ther rings. That section was supposed to be dynamic, but such feature _was not developed due to time_.
 
 The details page displays in adition to the thumbnail and its data, the movie tagline and an overview text. It also has a 'go back' button. The same effect can be obtained by clicking in the webapp title, in the header.
 
-Due to <u>__lack of time the loading states were not developed__</u>. Only 'fullfilled' and 'not found'.
+Due to  _lack of time the loading states were not developed_. Only 'fullfilled' and 'not found'.
 
 # Instalation
  1) 'npm i' at the root
