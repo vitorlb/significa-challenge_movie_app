@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Significa Challenge - "Cosmic Frame" Videos web app
 
-## Getting Started
+I have built the app using Next.js, the 'themoviedb' API, and the Google firabase package.
+Due to the tight time window I focused on developing the app for mobile devices. I suggest that you __take a look at the app using a mobile device preview__ .
 
-First, run the development server:
+In this challange, I started to sketch on paper the app. Listing the components and features allowed me to map and schedule the developing plan. I used an approach starting from the most 'inner' component to the most 'outer'. Simplified example: (thumb -> thumb + actions -> thumb + actions + details -> list(thumb + actions + details) -> page(list(thumb + actions + details), list(thumb + actions + details, favourite: true))). 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+After planning such tree, I noted each level with details (types of api requests, needed props, etc) ending up with a solid plan.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![alt text](https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbDRhRSJA84bk05EEE3sozye6wR8nSqpBGZqN4xHb65Hv53f9KPK5VywMced-lewhLj-giKwRbk-90__8Y0ib4zeg6x4lsdHg=w1920-h947-rw-v1)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+My approach to build de frontend is based on styling by classes on the last relevant level. Complementing the bootstrap classes with a bootstrap-like scss from my personal boilerplate. Reducing drastically the time spent on css styling.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The main page has one filterable list after the header, and a non filterable list listing the movies marked as 'favourites'. When the search value is setted to blank the list renders the weekly trending movies. The weekly trending movies is also the initial query for the filterable list.
 
-## Learn More
+The list displays a thumbnail with the movie poster, the title and rating (based on the average of the reviews provided by the API: <5 = *, >5 = ** >7.5 = ***), and three buttons. The first button add the movie to the personal favourites, persisting the data in a firebase realtime db. The second would open a modal with video preview of the trailer, __this feature was not implemented due to lack of time__ , allthough part of the process is built, clicking in the button is stored in state the path for youtube video. Activating and rendering the trailer modal is what's missing. The third button redirects the user to the selected movie details page.
 
-To learn more about Next.js, take a look at the following resources:
+The search input searches for all the keywords (title, actors, director, etc).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The list has two display options 'carousel' and 'list'. The carousel is made with flex display and scroll-snap.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The main page has a static setion with a line from the lord of ther rings. That section was supposed to be dynamic, but such feature __was not developed due to time__.
 
-## Deploy on Vercel
+The details page displays in adition to the thumbnail and its data, the movie tagline and an overview text. It also has a 'go back' button. The same effect can be obtained by clicking in the webapp title, in the header.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Due to __lack of time the loading states were not developed__. Only 'fullfilled' and 'not found'.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Instalation
+ 1) 'npm i' at the root
+ 2) 'npm run dev'

@@ -33,7 +33,7 @@ export default function TrailerBtn({ id }: { id: number }) {
     !!getTrailer?.key && setTrailerPath(getTrailer.key);
     (!getTrailer) && setTrailerUnavailable(true)
   }, [trailerObj])
-  useEffect(() => {
+useEffect(() => {
     console.log('GOT trailerPath-------------------->', trailerPath)
   }, [trailerPath])
 

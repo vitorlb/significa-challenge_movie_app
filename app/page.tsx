@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <PageFrame>
       <h1 className="m-0 pt-4">Cosmic frame 🛰️</h1>
-      <span className="sig-text-label">To infinty, and beyond!</span>
+      <span className="pt-1 sig-text-label">To infinty, and beyond!</span>
       <ThumbList />
       <div className="weekly-line my-5">
         <h4 className="sig-color-primary sig-font-size-6"><em>"Run, you fools!"</em></h4>

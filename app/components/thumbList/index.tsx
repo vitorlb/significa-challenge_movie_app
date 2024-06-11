@@ -66,9 +66,6 @@ export default function ThumbList({ query, hideSearch, favourites }: { query?: s
       : setDisplay(null)
   }, [viewFlag]);
 
-  useEffect(() => {
-    console.log('res---------------Z', results, favourites)
-  }, [results]);
 
 
   useEffect(() => {
@@ -97,6 +94,7 @@ export default function ThumbList({ query, hideSearch, favourites }: { query?: s
             <Thumb mode={display == 'list' ? 'horizontal' : null} id={e.id} />
           </div>
         })}
+        {!results?.data?.length && <h3>We found nothing with such terms 😓</h3>}
       </div>}</div>
   );
 }

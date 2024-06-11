@@ -10,7 +10,6 @@ export async function GET(request: Request) {
     const favouritesRef = collection(db, "favourites");
     const querySnapshot = await getDocs(favouritesRef);
     const favouriteIds = querySnapshot.docs.map(doc => doc.data().id);
-    console.log('GOT DATA -->' , favouriteIds)
     return Response.json( {data: favouriteIds} )
   } catch (error) {
     console.log('Error getting favourite IDs:', error);
