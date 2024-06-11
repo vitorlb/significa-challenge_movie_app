@@ -1,0 +1,137 @@
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('~/public/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?6lgorw');
+  src:  url('~/public/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?6lgorw#iefix') format('embedded-opentype'),
+    url('~/public/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?6lgorw') format('truetype'),
+    url('~/public/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?6lgorw') format('woff'),
+    url('~/public/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?6lgorw##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-inventa-"], [class*=" icon-inventa-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-inventa-facebook-icon {
+  &:before {
+    content: $icon-inventa-facebook-icon;
+  }
+}
+.icon-inventa-instagram-icon {
+  &:before {
+    content: $icon-inventa-instagram-icon;
+  }
+}
+.icon-inventa-linkedin-icon {
+  &:before {
+    content: $icon-inventa-linkedin-icon;
+  }
+}
+.icon-inventa-mobile-menu-icon {
+  &:before {
+    content: $icon-inventa-mobile-menu-icon;
+  }
+}
+.icon-inventa-user-icon {
+  &:before {
+    content: $icon-inventa-user-icon;
+  }
+}
+.icon-inventa-wechat-icon {
+  &:before {
+    content: $icon-inventa-wechat-icon;
+  }
+}
+.icon-inventa-x-icon {
+  &:before {
+    content: $icon-inventa-x-icon;
+  }
+}
+.icon-inventa-mapPin-icon {
+  &:before {
+    content: $icon-inventa-mapPin-icon;
+  }
+}
+.icon-inventa-envelopeSimple-icon {
+  &:before {
+    content: $icon-inventa-envelopeSimple-icon;
+  }
+}
+.icon-inventa-globe-icon {
+  &:before {
+    content: $icon-inventa-globe-icon;
+  }
+}
+.icon-inventa-magnifyingGlass-icon {
+  &:before {
+    content: $icon-inventa-magnifyingGlass-icon;
+  }
+}
+.icon-inventa-trash-icon {
+  &:before {
+    content: $icon-inventa-trash-icon;
+  }
+}
+.icon-inventa-close-icon {
+  &:before {
+    content: $icon-inventa-close-icon;
+  }
+}
+.icon-inventa-caretLeft-icon {
+  &:before {
+    content: $icon-inventa-caretLeft-icon;
+  }
+}
+.icon-inventa-caretDown-icon {
+  &:before {
+    content: $icon-inventa-caretDown-icon;
+  }
+}
+.icon-inventa-caretRight-icon {
+  &:before {
+    content: $icon-inventa-caretRight-icon;
+  }
+}
+.icon-inventa-mediumLeft-arrow {
+  &:before {
+    content: $icon-inventa-mediumLeft-arrow;
+  }
+}
+.icon-inventa-bigRight-arrow {
+  &:before {
+    content: $icon-inventa-bigRight-arrow;
+  }
+}
+.icon-inventa-mediumRight-arrow {
+  &:before {
+    content: $icon-inventa-mediumRight-arrow;
+  }
+}
+.icon-inventa-rightArrow--32 {
+  &:before {
+    content: $icon-inventa-rightArrow--32;
+  }
+}
+.icon-inventa-smallLeft-arrow {
+  &:before {
+    content: $icon-inventa-smallLeft-arrow;
+  }
+}
+.icon-inventa-smallRight-arrow {
+  &:before {
+    content: $icon-inventa-smallRight-arrow;
+  }
+}

@@ -1,0 +1,10 @@
+.sig-search-input-wrapper {
+    flex: 1;
+    .sig-search-input {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid black;
+        font-size: 12px;
+        width: 100%;
+    }
+}

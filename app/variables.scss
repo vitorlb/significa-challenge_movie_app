@@ -1,0 +1,53 @@
+// Attention: CSS code can't be import here, pls import in app.tsx!!
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// AD
+@import "./styles/mixins/containers.scss";
+
+// custom bootstrap options
+$enable-dark-mode: false;
+$enable-shadows: true;
+$enable-gradients: true;
+
+// custom grid-breakpoints
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 320,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+
+$container-max-widths: (
+  xs: 100%,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// icomoon custom font
+// custom colors
+$white-color: #FFF;
+$primary-color: #1C1C1C;
+$sig-dark-white: #F8F8F8;
+$sig-green: #C4FAB6;
+$sig-orange: #FCBA83;
+$sig-purple: #DBBDF4;
+$sig-salmon: #F5BEBA;
+$sig-invalid: #FF7262;
+$sig-teal: #C5EFEB;
+$sig-yellow: #FAED6B;
+$grey-medium: #F7F7F7;
+$grey-mediumDark: #A3A3A3;
+$grey-dark: #8F8F8F;
+$grey-darker: #717980;
+$sig-red: #D10000;
+
+$shadow: #00000012;
+$hover-shadow: #00000036;
