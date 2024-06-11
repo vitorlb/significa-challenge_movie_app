@@ -11,6 +11,7 @@ async function checkFavourite(movieId: any) {
     const favouritesRef = collection(db, "favourites");
     const q = query(favouritesRef, where("id", "==", movieId));
     const querySnapshot = await getDocs(q);
+    console.log('checking ----------->', querySnapshot, movieId)
     if (!querySnapshot.empty) {
       return true;
     }
@@ -49,14 +50,14 @@ export default function Favourite({ id, tagged }: { id: number, tagged?: boolean
     }
   }
   const checkFav = async () => {
-    const check = await checkFavourite(id);
+    const check = await checkFavourite(Number(id));
     if (check) {
       setIsFav(true);
     }
   }
   useEffect(() => {
     checkFav()
-  }, [])
+  }, [id])
   return (
     <button className={`px-1 sig-actions-button favourite-button reset-button 
     ${!!isFav ? 'favourite-button--active' : ''}`}>
