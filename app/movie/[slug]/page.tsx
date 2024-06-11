@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 export default function Movie() {
   const [results, setResults]: [results: any, setResults: any] = useState(null);
+  const [init, setInit] : [init:boolean, setInit:any] = useState(false);
   const params = useParams();
   const handleSubmit = async () => {
     const res = await fetch(`${window.location.protocol}//${window.location.host}`);
@@ -25,6 +26,7 @@ export default function Movie() {
   useEffect(() => {
     !!params.slug && getMoviesData(params.slug).then(data => {
       setResults({ tagline: data.tagline, synopse: data.overview });
+      setInit(true)
     })
   }, [])
   return (
@@ -36,7 +38,7 @@ export default function Movie() {
          <div className="sig-movie-detail__data mt-3">
           <h4 className="sig-color-primary"><em>"{results.tagline}"</em></h4>
           <p>{results.synopse}</p>
-        </div></> : <h3>Page not found 😓</h3>}
+        </div></> : !!init && <h3>Page not found 😓</h3>}
         <div className="sig-movie-detail__go-back mt-4">
           <a className="sig-color-black" href="/"><span className="sig-text-label--light sig-color-black">← Go back</span></a>
         </div>
