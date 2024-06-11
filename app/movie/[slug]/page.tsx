@@ -25,7 +25,8 @@ export default function Movie() {
   }
   useEffect(() => {
     !!params.slug && getMoviesData(params.slug).then(data => {
-      setResults({ tagline: data.tagline, synopse: data.overview });
+      debugger;
+      setResults({ tagline: data.tagline, synopse: data.overview, title: data.original_title });
       setInit(true)
     })
   }, [])
@@ -34,10 +35,10 @@ export default function Movie() {
       <h1 className="m-0 pt-4"> <a className="reset-link sig-color-black" href="/">Cosmic frame 🛰️</a></h1>
       <span className="pt-1 sig-text-label">To infinty, and beyond!</span>
       <div className="sig-movie-detail mt-4">
-        {!!(results?.tagline) ? <><Thumb mode={'headline'} id={params.slug} hideDetailBtn={true} />
+        {!!(results?.title) ? <><Thumb mode={'headline'} id={params.slug} hideDetailBtn={true} />
          <div className="sig-movie-detail__data mt-3">
-          <h4 className="sig-color-primary"><em>"{results.tagline}"</em></h4>
-          <p>{results.synopse}</p>
+          {results.tagline && <h4 className="sig-color-primary"><em>"{results.tagline}"</em></h4>}
+          {results.synopse && <p>{results.synopse}</p>}
         </div></> : !!init && <h3>Page not found 😓</h3>}
         <div className="sig-movie-detail__go-back mt-4">
           <a className="sig-color-black" href="/"><span className="sig-text-label--light sig-color-black">← Go back</span></a>
