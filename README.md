@@ -1,7 +1,7 @@
 # Significa Challenge - "Cosmic Frame" Videos web app
 
 I have built the app using Next.js, the 'themoviedb' API, and the Google firabase package.
-Due to the tight time window I focused on developing the app for mobile devices. I suggest that you __take a look at the app using a mobile device preview__ .
+Due to the tight time window I focused on developing the app for mobile devices. I suggest that you **_take a look at the app using a mobile device preview_** .
 
 In this challange, I started to sketch on paper the app. Listing the components and features allowed me to map and schedule the developing plan. I used an approach starting from the most 'inner' component to the most 'outer'. Simplified example: (thumb -> thumb + actions -> thumb + actions + details -> list(thumb + actions + details) -> page(list(thumb + actions + details), list(thumb + actions + details, favourite: true))). 
 
