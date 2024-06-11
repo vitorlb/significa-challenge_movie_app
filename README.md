@@ -23,7 +23,7 @@ The main page has a static setion with a line from the lord of ther rings. That 
 
 The details page displays in adition to the thumbnail and its data, the movie tagline and an overview text. It also has a 'go back' button. The same effect can be obtained by clicking in the webapp title, in the header.
 
-Due to __lack of time the loading states were not developed__. Only 'fullfilled' and 'not found'.
+Due to <u>__lack of time the loading states were not developed__</u>. Only 'fullfilled' and 'not found'.
 
 # Instalation
  1) 'npm i' at the root
