@@ -26,5 +26,6 @@ The details page displays in adition to the thumbnail and its data, the movie ta
 Due to  _lack of time the loading states were not developed_. Only 'fullfilled' and 'not found'.
 
 # Instalation
- 1) 'npm i' at the root
- 2) 'npm run dev'
+ 1) Use node version 20 (nvm i 20)
+ 2) 'npm i' at the root
+ 3) 'npm run dev'
