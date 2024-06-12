@@ -1,5 +1,3 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import PageFrame from "./components/pageFrame";
 import ThumbList from "./components/thumbList";
 export default function Home() {
