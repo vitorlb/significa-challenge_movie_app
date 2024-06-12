@@ -1,5 +1,6 @@
 import PageFrame from "./components/pageFrame";
 import ThumbList from "./components/thumbList";
+import TrailerModal from "./components/trailerModal";
 export default function Home() {
   return (
     <PageFrame>

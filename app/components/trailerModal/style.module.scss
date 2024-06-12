@@ -1,0 +1,13 @@
+.sig-trailer-modal {
+    background-color: #000000c2;
+    height: 100dvh;
+    position: fixed;
+    width: 100dvw;
+    z-index: 3;
+    .sig-trailer-modal__close-btn {
+        right: 24px;
+        color: white;
+        position: absolute;
+        top: 24px;
+    }
+}
