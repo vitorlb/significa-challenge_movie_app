@@ -1,3 +1,6 @@
+## 2024/06/12 Update -- Having the trailer modal unfinished was itching my brain. That itch drove me to build it today. Even though out of time. tag v1.0 is the projects version turned in on time
+
+
 # Significa Challenge - "Cosmic Frame" Videos web app
 
 I have built the app using Next.js, the 'themoviedb' API, and the Google firabase package.
@@ -19,7 +22,7 @@ The search input searches for all the keywords (title, actors, director, etc).
 
 The list has two display options 'carousel' and 'list'. The carousel is made with flex display and scroll-snap.
 
-The main page has a static setion with a line from the lord of ther rings. That section was supposed to be dynamic, but such feature _was not developed due to time_.
+The main page has a static setion with a line from the lord of the rings. That section was supposed to be dynamic, but such feature _was not developed due to time_.
 
 The details page displays in adition to the thumbnail and its data, the movie tagline and an overview text. It also has a 'go back' button. The same effect can be obtained by clicking in the webapp title, in the header.
 
